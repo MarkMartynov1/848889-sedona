@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Марк Мартынов](https://up.htmlacademy.ru/htmlcss/23/user/848889).
-* Наставник: `Неизвестно`.
+* Наставник: [Vladislav Rostov] (https://htmlacademy.ru/profile/id425565}.
 
 ---
 
