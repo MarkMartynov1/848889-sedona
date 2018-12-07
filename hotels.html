@@ -21,8 +21,44 @@
 <main class="container">
 <section class="form-hotels">
   <h1 class="visually-hidden">Гостиницы</h1>
-<!--Здесь будет форма выбора-->
-<img class="form" src="./img/filter background.jpg">
+  <form class="hotels-search" method="post" action="action="/echo" oninput="price-output.value=price.value">
+  <div class="infrastructure">
+    <p><b>Инфаструктура:</b></p>
+     <ul>
+       <li><input type="checkbox" name="pool" id="pool" checked>
+         <label for="pool">Бассейн</label>
+       </li>
+       <li><input type="checkbox" name="parking" id="parking">
+         <label for="parking">Парковка</label>
+       </li>
+       <li><input type="checkbox" name="wi-fi" id="wi-fi">
+         <label for="wi-fi">WI-FI</label>
+       </li>
+     </ul>
+   </div>
+   <div class="hotels-type">
+     <p><b>Тип жилья</b></p>
+     <ul>
+       <li><input type="checkbox" name="hotel" id="hotel" checked>
+         <label for="hotel">Гостиница</label>
+       </li>
+       <li><input type="checkbox" name="motel" id="motel" checked>
+         <label for="motel">Мотель</label>
+       </li>
+       <li><input type="checkbox" name="apartments" id="apartments" checked>
+         <label for="apartments">Аппартаменты</label>
+         <img class="form" src="./img/filter background.jpg">
+       </li>
+     </ul>
+   </div>
+   <div class="price">
+     <label for="price"><p><b>Стоимость в сутки(Р)</b></p></label>
+     <input type="range" name="price" id="price" min="0" max="5000" step="1">
+   </div>
+   <div class="price-output">
+     <output name="price-output"></output>
+   </div>
+ </form>
 </section>
 <section class="choice-hotels">
  <h2 class="search-result">Найдено:</h2>
@@ -47,7 +83,6 @@
       <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
       <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
       <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
-      <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
     </ul>
   </div>
  <div class="choice">
@@ -61,8 +96,6 @@
     <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
     <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
     <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
-    <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
-    <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
   </ul>
 </div>
 <div class="choice">
@@ -73,9 +106,6 @@
   <a class="reserve">Забронировать</a>
  <img class="hotel-img" src="./img/villas.jpg" alt="Villas at Poco Diablo">
  <ul class="stars">
-   <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
-   <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
-   <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
    <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
    <li><img class="star" src="./img/star.svg" src="рейтинг"></li>
  </ul>

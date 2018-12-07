@@ -69,7 +69,26 @@
  <section class="third-screen">
   <p><b>Заинтересовались?</b></p>
    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-  <!--Здесь будут форма и карта -->
+   <form class="search" method="post" action="action="/echo">
+      <button type="button">Поиск гостиницы в Седоне</button>
+    <div class="arrive">
+      <label for="arrive">Дата заезда</label>
+      <input id="arrive" type="date" name="date-arrive">
+    </div>
+    <div class="depart">
+      <label for="depart">Дата выезда</label>
+        <input id="depart" type="date" name="date-depart">
+    </div>
+    <div class="amount">
+      <label for="amount-grownup">Взрослые</label>
+      <input id="amount-grownup" type="number" name="amount-grownup" min="0" max="10" step="1">
+      <label for="amount-child">Дети</label>
+      <input id="amount-child" type="number" name="amount-child" min="0" max="10" step="1">
+    </div>
+    <div class="button">
+      <input type="submit" value="Найти">
+    </div>
+  </form>
    <img class="map" src="./img/map.jpg" alt="карта">
  </section>
 </main>
@@ -81,7 +100,7 @@
   <li><a class="social-button" href="#">Twitter</a></li>
   <li><a class="social-button" href="#">Facebook</a></li>
   <li><a class="social-button" href="#">YouTube</a></li>
- </ul>
+</ul>
  <p class="footer-copyright">website by</p>
   <a class="link" href="https://htmlacademy.ru"><img class="link" src="./img/logo-htmlacademy.svg">
   </a>
