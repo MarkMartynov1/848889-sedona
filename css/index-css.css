@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "[PTSans]";
+  src: url("./css/ptsans.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "[PTSans]";
+  src: url("./css/ptsansbold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "[PTSans]", Arial, sans-serif;
+  font-size: 14pt;
+  line-height: 26pt;
+  color:#333333;
+  text-transform: uppercase;
+  text-align: center;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 21pt;
+  line-height: 26pt;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+.site-navigation a {
+  font-size: 14pt;
+  line-height: 26pt;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 700;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+.site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: 2px solid #81b3d2;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #669ec0;
+}
+.button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.302);
+}
+
+.first-block {
+  background-color: #81b3d2;
+}
+
+.input-more a {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: 2px solid #81b3d2;
+}
+
+.reserve a {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: 2px solid #766357;
+}
