@@ -87,3 +87,7 @@ h3 {
   background-color: #766357;
   border: 2px solid #766357;
 }
+
+.benefits {
+  list-style: none;
+}
