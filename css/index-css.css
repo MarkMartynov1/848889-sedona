@@ -1,7 +1,7 @@
 @font-face {
   font-family: "[PTSans]";
   src: url("./css/ptsans.woff2");
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -10,14 +10,13 @@
   font-weight: 700;
   font-style: normal;
 }
+
 body {
   font-family: "[PTSans]", Arial, sans-serif;
   font-size: 14pt;
   line-height: 26pt;
   color:#333333;
   text-transform: uppercase;
-  text-align: center;
-  background: #ffffff;
 }
 
 a {
@@ -30,19 +29,102 @@ h3 {
   font-weight: 700;
 }
 
+.main-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
 .site-navigation a {
   font-size: 14pt;
   line-height: 26pt;
   color: #000000;
   background-color: #ffffff;
   font-weight: 700;
+  width: 300px;
+  height: 26px;
+  overflow: hidden
 }
 
+.site-navigation li {
+  display: inline-block;
+  margin-right: 148px;
+  margin-left: 72px;
+}
 .site-navigation a:hover {
   color: #81b3d2;
 }
 .site-navigation a:focus {
   color: rgba(0, 0, 0, 0.302);
+}
+
+.first-screen {
+  display: flex;
+  align-items: center;
+}
+
+.benefits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.first-benefits {
+  display: flex;
+  background-color: #81b3d2;
+  width: 400px;
+  height: 256px;
+  justify-content: space-between;
+}
+
+.first-benefits p {
+  padding-top: 45px;
+  padding-bottom: 60px
+}
+
+.first-block {
+  background-color: #81b3d2;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.polygon {
+  width: 1200px;
+}
+
+
+.promo {
+  margin-bottom: 55px;
+  margin-top: 35px;
+}
+
+.second-benefits {
+  display: flex;
+  background-color: white;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide-button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  width: 568px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
@@ -52,20 +134,21 @@ h3 {
   vertical-align: middle;
   text-transform: uppercase;
   background-color: #81b3d2;
-  border: 2px solid #81b3d2;
+  width: 458px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover,
 .button:focus {
   background-color: #669ec0;
 }
+
 .button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.302);
-}
-
-.first-block {
-  background-color: #81b3d2;
 }
 
 .input-more a {
@@ -88,6 +171,8 @@ h3 {
   border: 2px solid #766357;
 }
 
-.benefits {
+.footer-social {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }

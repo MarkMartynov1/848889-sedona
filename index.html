@@ -10,33 +10,36 @@
  <header class="main-header">
   <nav class="main-navigation">
    <a class="main-sedona-logo">
-   <img src="./img/logo-sedona.svg" alt="Логотип">
+   <img width="140px" height="72px" class="main-sedona-logo" src="./img/logo-sedona.svg" alt="Логотип">
    </a>
+   <div class="main-navigation">
    <ul class="site-navigation">
     <li><a href="info.html">Информация</a></li>
     <li><a href="media.html">Фото и видео</a></li>
     <li><a href="map.html">Карта штата</a></li>
     <li><a href="hotels.html">Гостиницы</a></li>
    </ul>
+ </div>
   </nav>
  </header>
  <main class="container">
   <section class="first-screen">
    <h1 class="visually-hidden">Sedona</h1>
-    <img src="./img/intro-welcome.svg" alt="Добро пожаловать в Седону">
-    <img src="./img/polygon.png" alt="фон первого экрана">
+   <img width="1200px" src="./img/polygon.png" alt="фон первого экрана">
+  <img height="353" src="./img/intro-welcome.svg" alt="Добро пожаловать в Седону">
   </section>
   <section class="second-screen>">
    <h2 class="visually-hidden">Преимущества</h2>
-   <h3>Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
-    <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+   <h3 class="benefits-h">Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
+    <p class="promo">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ul class="benefits">
-       <li><p><b>Настоящий городок</b></p>
+       <li><div class="first-benefits"><p><b>Настоящий городок</b></p>
        <p>— №1 —</p>
        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-       <img class="picture-1" src="./img/picture-1.jpg" alt="изображение">
+       <img class="picture-1" width="800px" height="256px" src="./img/picture-1.jpg" alt="изображение">
+     </div>
      </li>
-      <li><img class="house-img" src="./img/icon-1.svg" alt="Жилье">
+      <li><div class="second-benefits"><img class="house-img" src="./img/icon-1.svg" alt="Жилье">
        <h3>Жилье</h3>
        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
      </li>
@@ -47,6 +50,7 @@
      <li><img class="souvenir" src="./img/icon-3.svg">
       <h3>Сувениры</h3>
       <p class="souvenir-text">Не только китайского, но и местного производства!</p>
+     </div>
      </li>
      <li>
       <img class="picture-2" src="./img/picture-2.jpg">
@@ -72,8 +76,9 @@
   <p><b>Заинтересовались?</b></p>
    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
    <form class="search" method="post" action="https://echo.htmlacademy.ru/">
-      <button type="button">Поиск гостиницы в Седоне</button>
-    <div class="arrive">
+      <button type="button" class="hide-button">Поиск гостиницы в Седоне</button>
+    <div class="search-form">
+      <div class="arrive">
       <label for="arrive">Дата заезда</label>
       <input id="arrive" type="date" name="date-arrive">
     </div>
@@ -90,6 +95,7 @@
     <div class="button">
       <button type="button" class="button">Найти</button>
     </div>
+  </div>
   </form>
    <img class="map" src="./img/map.jpg" alt="карта">
  </section>
@@ -104,7 +110,7 @@
   <li><a class="social-button" href="#">YouTube</a></li>
 </ul>
  <p class="footer-copyright">website by</p>
-  <a class="link" href="https://htmlacademy.ru"><img class="link" src="./img/logo-htmlacademy.svg">
+  <a class="link" href="https://htmlacademy.ru"><img class="link" width="115" height="41" src="./img/logo-htmlacademy.svg">
   </a>
 </div>
 </section>
