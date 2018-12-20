@@ -29,12 +29,18 @@ h3 {
   font-weight: 700;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-navigation {
   list-style: none;
   margin: 0;
   padding: 0;
   display: block;
   text-align: center;
+  z-index: 10;
 }
 
 .site-navigation a {
@@ -50,9 +56,14 @@ h3 {
 
 .site-navigation li {
   display: inline-block;
-  margin-right: 148px;
+  margin-right: 72px;
   margin-left: 72px;
 }
+
+.site-navigation li:nth-child(2) {
+  margin-right: 280px;
+}
+
 .site-navigation a:hover {
   color: #81b3d2;
 }
@@ -60,9 +71,29 @@ h3 {
   color: rgba(0, 0, 0, 0.302);
 }
 
-.first-screen {
-  display: flex;
-  align-items: center;
+.polygon {
+  display: block;
+  position: absolute;
+  left: 1200px;
+  top: 0;
+
+}
+.logo-polygon {
+  display: block;
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 45%;
+  top: 160px;
+}
+
+.logo {
+  position: absolute;
+  width: 140px;
+  height: 70px;
+  left: 50%;
+  top: 0;
+  right: 500px;
 }
 
 .benefits {
@@ -91,11 +122,6 @@ h3 {
 .visually-hidden {
   display: none;
 }
-
-.polygon {
-  width: 1200px;
-}
-
 
 .promo {
   margin-bottom: 55px;
