@@ -9,8 +9,8 @@
  <body>
  <header>
   <nav class="main-navigation">
-   <a class="main-sedona-logo">
-  <img width="140px" height="72px" class="logo" src="./img/logo-sedona.svg" alt="Логотип">
+   <a>
+  <img class="main-sedona-logo" width="140px" height="72px" src="./img/logo-sedona.svg" alt="Логотип">
    </a>
    <ul class="site-navigation">
     <li><a href="info.html">Информация</a></li>
@@ -23,93 +23,98 @@
  <main class="container">
   <section class="first-screen">
    <h1 class="visually-hidden">Sedona</h1>
-   <div class="polygon"><img width="1200px" height="807px" src="./img/polygon.png" alt="фон первого экрана">
+  <div class="polygon"><img width="1200px" height="807px" src="./img/polygon.png" alt="фон первого экрана">
    </div>
   <div class="logo-polygon"><img width="459px" height="353px" src="./img/intro-welcome.svg" alt="Добро пожаловать в Седону">
   </section>
   <section class="second-screen>">
    <h2 class="visually-hidden">Преимущества</h2>
-   <h3 class="benefits-h">Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
+   <h3 class="first-title">Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
     <p class="promo">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ul class="benefits">
-       <li><div class="first-benefits"><p><b>Настоящий городок</b></p>
+       <li><div class="first-benefits"><div class="text"><p><b>Настоящий городок</b></p>
        <p>— №1 —</p>
-       <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+       <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p></div>
        <img class="picture-1" width="800px" height="256px" src="./img/picture-1.jpg" alt="изображение">
      </div>
      </li>
-      <li><div class="second-benefits"><img class="house-img" src="./img/icon-1.svg" alt="Жилье">
+      <li><div class="line-benefits"><img class="house-img" src="./img/icon-1.svg" alt="Жилье">
        <h3>Жилье</h3>
        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
      </div>
-     </li>
-     <li><div class="third-benefits"><img class="food-img" src="./img/icon-2.svg" alt="Еда">
+     <div class="line-benefits"><img class="food-img" src="./img/icon-2.svg" alt="Еда">
       <h3>Еда</h3>
       <p class="food-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-      </div>
-     </li>
-     <li><div class="fourth-benefits"><img class="souvenir" src="./img/icon-3.svg">
+    </div>
+     <div class="line-benefits"><img class="souvenir" src="./img/icon-3.svg">
       <h3>Сувениры</h3>
       <p class="souvenir-text">Не только китайского, но и местного производства!</p>
       </div>
      </li>
-     <li>
-      <img class="picture-2" src="./img/picture-2.jpg">
-      <p><b>Там есть Мост дьявола</b></p>
+     <li><div class="second-benefits"><img class="picture-2" src="./img/picture-2.jpg">
+       <div class="text"><p><b>Там есть Мост дьявола</b></p>
       <p>— №2 —</p>
       <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+    </div>
+    </div>
     </li>
-    <li><p><b>Небольшая площадь</b></p>
+    <li><div class="final-benefits"><div class="third-benefits"><p><b>Небольшая площадь</b></p>
      <p>— №3 —</p>
      <p>Все достопримечательности находятся очень близко</p>
-    </li>
-    <li><p><b>Красивая дорога</b></p>
+   </div>
+    <div class="fourth-benefits"><p><b>Красивая дорога</b></p>
      <p>— №4 —</p>
      <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-    </li>
-    <li><p><b>Мало туристов</b></p>
+   </div>
+    <div class="fifth-benefits"><p><b>Мало туристов</b></p>
      <p>— №5 —</p>
      <p>Большинство едет в гранд каньон и толпится там</p>
-    </li>
+   </div>
+   </div>
+ </li>
  </ul>
  </section>
  <section class="third-screen">
-  <p><b>Заинтересовались?</b></p>
-   <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+  <div class="pre-form"><p><b class="second-title">Заинтересовались?</b></p>
+   <p class="second-promo">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+ </div>
+ <div class="map"><img src="./img/map.jpg" alt="карта">
+ </div>
    <form class="search" method="post" action="https://echo.htmlacademy.ru/">
       <button type="button" class="hide-button">Поиск гостиницы в Седоне</button>
     <div class="search-form">
       <div class="arrive">
       <label for="arrive">Дата заезда</label>
       <input id="arrive" type="date" name="date-arrive">
+      <img class="arrive" src="./img/calendar.svg">
     </div>
     <div class="depart">
       <label for="depart">Дата выезда</label>
         <input id="depart" type="date" name="date-depart">
+        <img class="depart" src="./img/calendar.svg">
     </div>
     <div class="amount">
       <label for="amount-grownup">Взрослые</label>
-      <input id="amount-grownup" type="number" name="amount-grownup" min="0" max="10" step="1">
+      <input class="grownup" id="amount-grownup" type="number" name="amount-grownup" min="0" max="10" step="1">
       <label for="amount-child">Дети</label>
-      <input id="amount-child" type="number" name="amount-child" min="0" max="10" step="1">
+      <input class="child" id="amount-child" type="number" name="amount-child" min="0" max="10" step="1">
     </div>
-    <div class="button">
-      <button type="button" class="button">Найти</button>
+    <div>
+      <button class="button" type="button">Найти</button>
     </div>
   </div>
   </form>
-   <img class="map" src="./img/map.jpg" alt="карта">
  </section>
 </main>
 <footer class="main-footer">
 <section class="footer">
  <p class="visitsedona">#visitsedona</p>
 <div class="footer-social">
- <ul>
-  <li><a class="social-button" href="#">Twitter</a></li>
-  <li><a class="social-button" href="#">Facebook</a></li>
-  <li><a class="social-button" href="#">YouTube</a></li>
-</ul>
+  <a class="social social-tw" href="twitter.com"><img src="./img/twitter.svg"></a>
+  <a class="social social-fb" href="facebook.com"><img src="./img/fb-icon.svg"></a>
+  <a class="social social-yt" href="youtube.com"><img src="./img/youtube.svg"></a>
+</div>
+<div class="copyright">
  <p class="footer-copyright">website by</p>
   <a class="link" href="https://htmlacademy.ru"><img class="link" width="115" height="41" src="./img/logo-htmlacademy.svg">
   </a>

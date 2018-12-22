@@ -1,11 +1,13 @@
 @font-face {
   font-family: "[PTSans]";
+  src: url("./css/ptsans.woff");
   src: url("./css/ptsans.woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "[PTSans]";
+  src: url("ptsansbold.woff");
   src: url("./css/ptsansbold.woff2");
   font-weight: 700;
   font-style: normal;
@@ -13,158 +15,300 @@
 
 body {
   font-family: "[PTSans]", Arial, sans-serif;
-  font-size: 14pt;
   line-height: 26pt;
-  color:#333333;
   text-transform: uppercase;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
 }
 
-h3 {
-  font-size: 21pt;
-  line-height: 26pt;
-  font-weight: 700;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .main-navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: block;
-  text-align: center;
-  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
 }
 
 .site-navigation a {
+  color: #000000;
+  font-weight: 700;
   font-size: 14pt;
   line-height: 26pt;
-  color: #000000;
-  background-color: #ffffff;
-  font-weight: 700;
-  width: 300px;
-  height: 26px;
-  overflow: hidden
+  padding: 20px 73px;
 }
 
 .site-navigation li {
   display: inline-block;
-  margin-right: 72px;
-  margin-left: 72px;
+  list-style: none;
 }
 
 .site-navigation li:nth-child(2) {
-  margin-right: 280px;
+  margin-right: 52px;
 }
 
 .site-navigation a:hover {
   color: #81b3d2;
 }
+
 .site-navigation a:focus {
   color: rgba(0, 0, 0, 0.302);
 }
 
-.polygon {
-  display: block;
+.main-sedona-logo {
   position: absolute;
-  left: 1200px;
   top: 0;
-
-}
-.logo-polygon {
-  display: block;
-  position: absolute;
-  width: auto;
-  height: auto;
-  left: 45%;
-  top: 160px;
-}
-
-.logo {
-  position: absolute;
-  width: 140px;
-  height: 72px;
-  left: 50%;
-  top: 0;
-  right: 500px;
-}
-
-.benefits {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.first-benefits {
-  display: flex;
-  background-color: #81b3d2;
-  width: 400px;
-  height: 256px;
-  justify-content: space-between;
-}
-
-.first-benefits p {
-  padding-top: 45px;
-  padding-bottom: 60px
-}
-
-.first-block {
-  background-color: #81b3d2;
+  left: 700px;
 }
 
 .visually-hidden {
   display: none;
 }
 
+.polygon {
+  display: block;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+}
+
+.logo-polygon {
+  position: absolute;
+  top: 152px;
+  left: 550px;
+}
+
+.first-title {
+  position: absolute;
+  width: 650px;
+  text-align: center;
+  top: 700px;
+  left: 450px;
+  font-size: 21pt;
+  font-weight: 700;
+  word-break: normal;
+}
+
 .promo {
-  margin-bottom: 55px;
-  margin-top: 35px;
+  position: absolute;
+  width: 510px;
+  text-align: center;
+  top: 820px;
+  left: 415px;
+  font-size: 14pt;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.benefits {
+  width: 1200px;
+  list-style: none;
+}
+
+.first-benefits {
+  display: flex;
+}
+
+.picture-1 {
+  width: 800px;
+  height: 256px;
+}
+
+.text {
+  vertical-align: middle;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #ffffff;
+  width: 400px;
+  height: 256px;
+}
+
+.line-benefits {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 397px;
+  min-height: 330px;
 }
 
 .second-benefits {
   display: flex;
-  background-color: white;
+  width: 1200px;
 }
 
-.search-form {
+.picture-2 {
+  width: 800px;
+  height: 256px;
+}
+
+.final-benefits {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  width: 1200px;
+  background-color: #eeeeee;
+  min-height: 256px;
+}
+
+.pre-form {
+  display: block;
+  width: 650px;
+  margin: 0 auto;
+  }
+
+.second-title {
+  display: block;
+  font-size: 30pt;
+  font-weight: 700;
+  width: 1200px;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.second-promo {
+  text-align: center;
+  width: 638px;
+  margin-left: auto;
+  margin-right: : auto;
+}
+
+.map img {
+  display: block;
+  margin-left: 40px;
+  margin-top: 150px;
+}
+
+.search {
+  position: absolute;
+  top: 2181px;
+  left: 90px;
 }
 
 .hide-button {
-  font: inherit;
+  display: flex;
+  font-size: 21pt;
+  font-weight: 700;
   text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
+  justify-content: center;
+  color: #ffffff;
   background-color: #766357;
   width: 568px;
   height: 86px;
+  border: 1px solid #766357;
+  margin-left: 363px;
+  margin-top: 55px;
+}
+
+.search-form {
+  border: 1px solid #eeeeee;
+  width: 568px;
+  height: 395px;
+  margin-left: 363px;
+  background-color: #ffffff;
+}
+
+label[for="arrive"] {
+  font-size: 12pt;
+  font-weight: 700;
+  width: 155px;
+}
+
+.arrive {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 35px;
+  margin-left: 55px;
+  margin-right: auto;
+}
+
+.arrive input[type="date"] {
+  border: 1px solid #eeeeee;
+  width: 300px;
+  height: 40px;
+  background-color: #eeeeee;
+}
+
+.arrive img {
+  position: absolute;
+  margin-left: 430px;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+label[for="depart"] {
+  font-size: 12pt;
+  font-weight: 700;
+  width: 155px;
+}
+
+.depart {
+  display: flex;
+  margin-top: 35px;
+  margin-left: 55px;
+  margin-right: auto;
+}
+
+.depart input[type="date"] {
+  border: 1px solid #eeeeee;
+  width: 300px;
+  height: 40px;
+  background-color: #eeeeee;
+}
+
+.depart img {
+  position: absolute;
+  margin-left: 430px;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+.amount {
+  display: flex;
+  margin-top: 35px;
+  margin-left: 83px;
+  margin-right: 33px;
+}
+
+
+label[for="amount-grownup"] {
+  font-size: 12pt;
+  font-weight: 700;
+  width: 170px;
+}
+
+input[type="number"] {
+  border: 1px solid #eeeeee;
+  width: 110px;
+  height: 35px;
+  background-color: #eeeeee;
+  margin-right: 20px;
+}
+
+label[for="amount-child"] {
+  font-size: 12pt;
+  font-weight: 700;
+  width: 155px;
+  margin-left: 0px;
 }
 
 .button {
-  font: inherit;
-  text-align: center;
+  font-size: 21pt;
+  font-weight: 700;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #81b3d2;
+  border: 1px solid #81b3d2;
   width: 458px;
   height: 58px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 55px;
+  margin-top: 55px;
 }
 
 .button:hover,
@@ -177,28 +321,38 @@ img {
   color: rgba(255, 255, 255, 0.302);
 }
 
-.input-more a {
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: #81b3d2;
-  border: 2px solid #81b3d2;
+.footer {
+  display: flex;
+  width: 1200px;
 }
 
-.reserve a {
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: #766357;
-  border: 2px solid #766357;
+.visitsedona {
+  font-size: 21pt;
+  font-weight: 700;
+  margin-left: 135px;
+  margin-top: 40px;
 }
 
 .footer-social {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  width: 500px;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.social {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background: #81b3d2;
+  vertical-align: middle;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.copyright {
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
 }
