@@ -1,4 +1,4 @@
-body {
+ body {
   font-family: 'PT Sans', sans-serif;
   line-height: 26px;
   text-transform: uppercase;
@@ -15,7 +15,7 @@ a {
   margin: 0 auto;
   width: 1280px;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .navigation-head {
@@ -71,7 +71,7 @@ position: absolute;
 width: 140px;
 left: 50%;
 z-index: 10;
-margin-left: -70;
+margin-left: -70px;
 }
 
 .visually-hidden {
@@ -80,32 +80,30 @@ margin-left: -70;
 
 .polygon {
   margin-bottom: 724px;
+  position: absolute;
+  top: -15px;
+  z-index: -2;
 }
 
 .polygon img {
-  position: absolute;
-  margin-left: auto;
   margin-right: auto;
-  top: -25px;
   margin-left: 40px;
-  z-index: -1;
 }
 
 .logo-polygon {
   position: absolute;
   top: 130px;
-  left: 535px;
+  left: 412px;
 }
 
 .first-title {
   position: absolute;
-  width: 440px;
   text-align: center;
+  width: 440px;
   top: 602px;
-  left: 535px;
+  left: 420px;
   font-size: 21px;
   font-weight: 700;
-  word-break: normal;
 }
 
 .promo {
@@ -113,7 +111,7 @@ margin-left: -70;
   width: 510px;
   text-align: center;
   top: 690px;
-  left: 505px;
+  left: 383px;
   font-size: 14px;
   font-weight: 400;
   white-space: nowrap;
@@ -121,6 +119,7 @@ margin-left: -70;
 
 .benefits {
   list-style: none;
+  margin-top: 724px;
 }
 
 .first-benefits {
@@ -242,7 +241,7 @@ margin-left: -70;
 .search {
   position: absolute;
   top: 2028px;
-  left: 113px;
+  left: -7px;
 }
 
 .hide-button {
@@ -257,17 +256,32 @@ margin-left: -70;
   background-color: #766357;
   width: 568px;
   height: 86px;
-  border: 1px solid #766357;
+  border: none;
   margin-left: 363px;
   margin-top: 55px;
 }
 
+
+.hide-button:hover {
+  background-color: #604e43;
+}
+
+.hide-button:active {
+  background-color: #503e33;
+  color: #857871;
+}
+
 .search-form {
+  display: none;
   border: 1px solid #eeeeee;
   width: 568px;
   height: 395px;
   margin-left: 363px;
   background-color: #ffffff;
+}
+
+.show {
+  display: block;
 }
 
 label[for="arrive"] {
@@ -278,79 +292,177 @@ label[for="arrive"] {
 
 .arrive {
   display: flex;
-  margin-top: 35px;
+  margin-top: 62px;
   margin-left: 55px;
   margin-right: auto;
 }
 
-.arrive input[type="date"] {
+.arrive input[type="text"] {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  text-transform: uppercase;
   border: 1px solid #eeeeee;
-  width: 300px;
-  height: 40px;
+  width: 326px;
+  height: 32px;
   background-color: #eeeeee;
+  left: -35px;
+  top: -5px;
+  padding-left: 10px;
 }
 
-.arrive img {
+.arrive svg {
   position: absolute;
-  margin-left: 430px;
-  margin-top: 10px;
-  opacity: 0.5;
+  left: 845px;
+}
+.arrive svg:hover {
+  fill: #000000;
+}
+
+.arrive svg:active {
+  fill: #81b3d2;
 }
 
 label[for="depart"] {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   width: 155px;
 }
 
 .depart {
   display: flex;
-  margin-top: 35px;
+  margin-top: 32px;
   margin-left: 55px;
   margin-right: auto;
 }
 
-.depart input[type="date"] {
+.depart input[type="text"] {
+  position: relative;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
   border: 1px solid #eeeeee;
-  width: 300px;
-  height: 40px;
+  width: 326px;
+  height: 32px;
   background-color: #eeeeee;
+  left: -35px;
+  top: -7px;
+  padding-left: 10px;
 }
 
-.depart img {
+.depart svg {
   position: absolute;
-  margin-left: 430px;
-  margin-top: 10px;
-  opacity: 0.5;
+  left: 845px;
+}
+.depart svg:hover {
+  fill: #000000;
+}
+
+.depart svg:active {
+  fill: #81b3d2;
 }
 
 .amount {
   display: flex;
-  margin-top: 35px;
-  margin-left: 83px;
-  margin-right: 33px;
+  margin-top: 30px;
 }
-
 
 label[for="amount-grownup"] {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   width: 170px;
-}
-
-input[type="number"] {
-  border: 1px solid #eeeeee;
-  width: 110px;
-  height: 35px;
-  background-color: #eeeeee;
-  margin-right: 20px;
+  margin-left: 55px;
+  margin-right: 0 auto;
 }
 
 label[for="amount-child"] {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   width: 155px;
-  margin-left: 0px;
+  margin-left: 35px;
+  margin-right: 0 auto;
+}
+
+input[type="text"].grownup {
+  position: relative;
+  left: -21px;
+  top: -3px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  width: 110px;
+  border: 1px solid #eeeeee;
+  height: 32px;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+input[type="text"].child {
+  position: relative;
+  left: -56px;
+  top: -3px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  width: 110px;
+  border: 1px solid #eeeeee;
+  height: 32px;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.plus {
+  position: absolute;
+  top: 340px;
+  color: #a9a9a9;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.plus-grownup {
+  left: 620px;
+}
+
+.plus-child {
+  left: 852px;
+}
+
+.plus:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.plus:active {
+  color: #81b3d2;
+  cursor: pointer;
+}
+
+.minus {
+  position: absolute;
+  top: 338px;
+  color: #a9a9a9;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.minus-grownup {
+  left: 541px;
+}
+
+.minus-child {
+  left: 776px;
+}
+
+.minus:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.minus:active {
+  color: #81b3d2;
+  cursor: pointer;
 }
 
 .button {
@@ -359,14 +471,14 @@ label[for="amount-child"] {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #81b3d2;
-  border: 1px solid #81b3d2;
+  border: none;
   width: 458px;
   height: 58px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 55px;
-  margin-top: 55px;
+  margin-top: 50px;
 }
 
 .button:hover,
@@ -376,6 +488,11 @@ label[for="amount-child"] {
 
 .button:active {
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.302);
+}
+
+.button:visited {
+  background-color: #766357;
   color: rgba(255, 255, 255, 0.302);
 }
 
@@ -408,6 +525,18 @@ label[for="amount-child"] {
   justify-content: center;
 }
 
+.social:hover {
+  background-color: #669ec0;
+}
+
+.social:active {
+  background-color: #5496bd;
+}
+
+.social-icon:active {
+  filter: opacity(30%);
+}
+
 .social-icon {
   margin-top: 15px;
 }
@@ -426,11 +555,20 @@ label[for="amount-child"] {
   margin-left: 5px;
 }
 
+.link svg:hover {
+  fill: #81b3d2;
+}
+
+.link svg:active {
+  fill: #bdbbbc;
+}
+
 .form {
   display: flex;
   width: 1200px;
   list-style: none;
   color: #ffffff;
+  margin-top: 27px;
 }
 
 .background-form {
@@ -440,9 +578,8 @@ label[for="amount-child"] {
   z-index: -1;
 }
 
-
 .infrastructure b {
-  margin-left: 113px;
+  margin-left: 116px;
 }
 
 .infrastructure ul {
@@ -454,7 +591,7 @@ label[for="amount-child"] {
 }
 
 .hotels-type b {
-  margin-left: 143px;
+  margin-left: 123px;
 }
 
 .hotels-type ul {
@@ -463,24 +600,130 @@ label[for="amount-child"] {
 }
 
 .hotels-type li {
-  margin-left: 106px;
+  margin-left: 86px;
 }
 
-.price {
+.filter-range {
   margin-left: 40px;
+}
+
+.filter-range b {
+  margin-left: 80px;
 }
 
 .checkbox input[type=checkbox] {
   display: none;
 }
 
-input[type="text"] {
-  background-color: rgba(0, 0, 0, 0);
-  margin-left: 3px;
-  width: 155px;
-  height: 25px;
+input[type="checkbox"] + label {
+  position: relative;
+  font-size: 14px;
+  padding-left: 37px;
+  display: block;
+  margin-bottom: 23px;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+input[type="checkbox"]:checked + label {
+  background: url("../img/checkbox-on.svg") no-repeat;
+  }
+
+input[type="checkbox"]:disabled + label {
+  background: url("../img/checkbox-disabled.png") no-repeat;
+  }
+
+.show-results {
   border: 2px solid #ffffff;
-  margin-top: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 7px 34px;
+  text-transform: uppercase;
+  margin-left: 162px;
+  margin-top: 25px;
+}
+
+.show-results:hover {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.price-controls {
+  position: relative;
+  height: 32px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  margin-left: 78px;
+  margin-top: 7px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.separator {
+  position: absolute;
+  left: 1010px;
+  top: 121px;
+}
+
+.index-line {
+  position: absolute;
+  top: 170px;
+  left: 852px;
+}
+
+.active-line {
+  margin-top: 0px;
+  margin-left: 91px;
+}
+
+.filter:hover {
+  width: 22px;
+  height: 24px;
+}
+
+.filter-button-1 {
+  position: absolute;
+  top: 162px;
+  left: 852px;
+}
+
+.filter-button-2 {
+  position: absolute;
+  top: 162px;
+  left: 1104px;
 }
 
 .choice-hotels {
@@ -494,8 +737,8 @@ input[type="text"] {
   width: 1200px;
   border: 1px solid #e5e5e5;
   min-height: 85px;
-  margin-top: 82px;
 }
+
 
 .result-search h2 {
   font-size: 21px;
@@ -508,7 +751,7 @@ input[type="text"] {
   display: inline-block;
   list-style: none;
   margin-left: 10px;
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .sort li:first-child {
@@ -526,15 +769,26 @@ input[type="text"] {
 .sort button:hover {
   color: #81b3d2;
   cursor: pointer;
+  border-bottom: none;
   }
 
 .sort button:active {
   color: #000000;
+  border-bottom: none;
 }
 
 .up-down {
   margin-left: 505px;
   margin-top: 30px;
+  cursor: pointer;
+  fill: #cacaca;
+}
+
+.up-down svg:hover {
+  fill: #231f20;
+}
+.up-down svg:active {
+  fill: #81b3d2;
 }
 
 .up {
@@ -562,21 +816,35 @@ input[type="text"] {
 }
 
 .hotel-name {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.hotel-name a {
   font-size: 21px;
   margin-left: 240px;
-  margin-top: 22px;
-  margin-bottom: -1px;
+  color: #000000;
+}
+
+.hotel-name a:hover {
+  color: #81b3d2;
+}
+
+.hotel-name a:active {
+  color: #b2b2b2;
 }
 
 .info {
   display: flex;
   font-size: 14px;
-  line-height: 21px;
   margin-left: 238px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .info p {
   margin-right: 20px;
+  margin-top: 5px;
 }
 
 .buttons {
@@ -598,6 +866,15 @@ input[type="text"] {
   padding-bottom: 4px;
 }
 
+.input-more:hover {
+  background-color: #669ec0;
+}
+
+.input-more:active {
+  background-color: #5496bd;
+  color: #76abca;
+}
+
 .reserve {
   background-color: #766357;
   color: #ffffff;
@@ -613,10 +890,37 @@ input[type="text"] {
   padding-bottom: 4px;
 }
 
+.reserve:hover {
+  background-color: #604e43;
+}
+
+.reserve:active {
+  background-color: #503e33;
+  color: #857871;
+}
 .stars {
-  display: inline-flex;
+  display: flex;
   position: absolute;
   list-style: none;
   margin-left: 1000px;
   margin-top: 30px;
+  width: 95px;
+  justify-content: flex-end;
+}
+
+.stars li {
+  padding: 2px;
+  text-align: left;
+}
+
+.rating {
+  background-color: #f2f2f2;
+  width: 110px;
+  height: 27px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  position: relative;
+  top: -26px;
+  left: 1020px;
 }
