@@ -1,0 +1,1 @@
+var button=document.querySelector(".hide-button"),popup=document.querySelector(".search");button.addEventListener("click",function(a){a.preventDefault();console.log("\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u0444\u043e\u0440\u043c\u0443 \u043f\u043e\u0438\u0441\u043a\u0430 \u0433\u043e\u0441\u0442\u0438\u043d\u0438\u0446\u044b");popup.classList.toggle("show")});
